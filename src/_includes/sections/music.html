@@ -1,0 +1,27 @@
+{% set title = 'MUSIC' %}
+{% extends "../layouts/section.njk" %}
+{% block content %}
+
+{% include '../partials/_debut_album.njk' %}
+
+<div class="h-8 md:h-16"></div>
+
+{% set imageSource = '/assets/images/Les_Vaisseaux _du_Coeur.jpeg' %}
+{% set imageAlt = 'Romain Axisa - Les Vaisseaux du Coeur' %}
+{% set songTitle = 'Les Vaisseaux du Coeur' %}
+{% set ytSource = 'https://www.youtube.com/watch?v=VZE5Enbh5BY' %}
+{% set spotifySource = 'https://open.spotify.com/album/1kXod3Xu6WZlEczNeUnmqL' %}
+{% set iTunesSource = 'https://music.apple.com/us/album/les-vaisseaux-du-c%C5%93ur-single/1705303034' %}
+{% include '../partials/_music_card_first.njk' %}
+
+<div class="h-8 md:h-16"></div>
+
+{% set imageSource = '/assets/images/latest.jpeg' %}
+{% set imageAlt = 'Romain Axisa - Happy song' %}
+{% set songTitle = 'Happy Song' %}
+{% set ytSource = 'https://www.youtube.com/watch?v=GxNd5_DhURg' %}
+{% set spotifySource = 'https://open.spotify.com/album/4EILIu6XB1U606sWl8wSrI' %}
+{% set iTunesSource = 'https://music.apple.com/album/happy-song-single/1696071624' %}
+{% include '../partials/_music_card_second.njk' %}
+
+{% endblock %}

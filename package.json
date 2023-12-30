@@ -1,0 +1,20 @@
+{
+  "name": "romain-axisa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy --serve & npx tailwindcss -i ./tailwind.css -o ./dist/css/styles.css --watch",
+    "build:prod": "eleventy & npx tailwindcss -i ./tailwind.css -o ./dist/css/styles.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
